@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+.cp__content{
+    padding: 40px 0;
+}
+
+.cp__inner h1{
+    color: #33AEF2;
+}
+
+.cp__inner .nav{
+    border-bottom: 0;
+    display: flex;
+    gap: 30px;
+    background-color: #33AEF2;
+    padding: 10px 0;
+}
+
+.cp__inner .nav button{
+    border: none;
+    background-color: transparent;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 50px;
+}
+
+.cp__inner .nav button.active{
+    background: #2e7da878;
+}
+
+.step__box{
+    gap: 15px;
+}
+
+.steps{
+    margin-bottom: 40px;
+}
+
+.steps .step__title h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #33AEF2;
+    /* cursor: pointer; */
+    margin-bottom: 13px;
+}
+
+.step__box select{
+    outline: none;
+    border: 1px solid #33AEF2;
+    color: #666;
+    border-radius: 1px;
+}
+
+.app-filter, .AppVersionFilter, .text__values textarea{
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+}
+
+.AppVersionFilter{
+    max-width: 100px;
+}
+
+.modify__btns{
+    gap: 20px;
+}
+
+.modify__btns button {
+    width: 155px;
+    padding: 7px;
+    border: none;
+    background: #33AEF2;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+}
+
+.URL__steps .modify__btns button{
+    width: 210px;
+}
+
+.text__values textarea{
+    width: 100%;
+    max-width: unset;
+    border: 1px solid #33AEF2;
+    margin-top: 15px;
+}
+
+.URL__steps .modify__btns .urlChecked{
+    font-size: 20px;
+    user-select: none;
+}
+
+.URL__steps .modify__btns .urlChecked input{
+    height: 20px;
+    width: 20px;
+}
