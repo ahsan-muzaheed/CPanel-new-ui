@@ -72,11 +72,20 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 1px;
 }
 
-.app-filter, .AppVersionFilter, .text__values textarea{
+.app-filter,
+ .AppVersionFilter,
+  .text__values textarea,
+   .ServerApps-filter, 
+   .para__pass input,
+   .RunningDedicatedServerMachines-filter,
+   .RunningAppsOnSelctedDSMachine-filter
+   
+   {
     padding: 8px 12px;
     width: 100%;
     max-width: 400px;
     outline: none;
+    border: 1px solid #33AEF2;
 }
 
 .AppVersionFilter{
@@ -144,6 +153,68 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 1px;
 }
 
-#Meetings_sec .step__box{
+.para__pass h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #33AEF2;
+    margin-bottom: 5px;
+}
 
+.para__pass input{
+    max-width: unset;
+    margin-bottom: 20px;
+}
+
+.RunningDedicatedServerMachines-filter,
+ .RunningAppsOnSelctedDSMachine-filter{
+    max-width: 320px;
+ }
+
+.para__pass .modify__btns button{
+    width: 225px;
+}
+
+.analysis.modify__btns button{
+    width: 185px;
+}
+
+.step1__add .modal-content button {
+    padding: 0;
+    width: unset;
+    background: unset;
+    color: #000;
+}
+
+.step1__add .modal-header{
+    border: 0px;
+}
+
+.step1__add .modal-header button{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.step1__add .modal-body{
+    border: 0px;
+}
+
+.step1__add .modal-body input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #33AEF2;
+    color: #666;
+    border-radius: 1px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+}
+
+.step1__add .modal-body button{
+    background: #33AEF2;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 0;
 }
