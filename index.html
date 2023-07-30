@@ -36,12 +36,12 @@
                                 ANALYTICS DATA</button>
                         </div>
                     </nav>
-                    <div class="tab-content p-3 " id="nav-tabContent">
+                    <div class="tab-content p-3 tab__body" id="nav-tabContent">
                         <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <div class="steps" id="app_sec">
                                 <div class="step__title">
-                                    <h2>STEP1: APP SELECTION</h2>
+                                    <h2>STEP1: App Selection</h2>
                                 </div>
                                 <div class="step__box d-flex">
                                     <select name="" id="Apps-filter" class="app-filter">
@@ -78,7 +78,7 @@
                             </div>
                             <div class="steps" id="app_sec">
                                 <div class="step__title">
-                                    <h2>STEP2: CONFIG SELECTION</h2>
+                                    <h2>STEP2: Config Selection</h2>
                                 </div>
                                 <div class="step__box d-flex">
                                     <select name="" id="AppConfig-filter-filter" class="app-filter">
@@ -102,7 +102,7 @@
                             </div>
                             <div class="steps URL__steps" id="app_sec">
                                 <div class="step__title">
-                                    <h2>STEP3: GENERATE URLS</h2>
+                                    <h2>STEP3: Generate URLs</h2>
                                 </div>
                                 <div class="step__box d-flex">
                                     <div class="modify__btns d-flex align-items-center">
@@ -118,18 +118,49 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <p><strong>This is some placeholder content the Profile tab's associated content.</strong>
-                                Clicking another tab will toggle the visibility of this one for the next.
-                                The tab JavaScript swaps classes to control the content visibility and styling. You can
-                                use it with
-                                tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+                            <div class="steps" id="Meetings_sec">
+                                <div class="step__title">
+                                    <h2>STEP4: Generate Meeting URLs</h2>
+                                </div>
+                                <div class="step__box d-flex flex-column">
+                                    <div class="generate__url d-flex">
+                                        <button id="GenrateLinks">Generate Meeting URL <i class="fa-solid fa-link"></i> </button>
+                                        <input type="text" placeholder="Host Link" id="HostLink" class="w-100">
+                                    </div>
+                                    <div class="modify__btns d-flex justify-content-end">
+                                        <button title="Upload New Version" id="copyHostLink"><i class="fa-solid fa-copy"></i> Copy App URL</button>
+                                        <button title="Add New App" id="copyHostLinkIframeScript"><i class="fa-solid fa-copy"></i> Copy iFrame Script</button>
+                                        <button title="Delete Selected App" id="tryHostLink"><i class="fa-solid fa-up-right-from-square"></i> Host Meeting</button>
+                                    </div>
+                                    <div class="generate__url d-flex" >
+                                        <button class="invisible" id="">Generate Meeting URL <i class="fa-solid fa-link"></i> </button>
+                                        <input type="text" placeholder="Guest Link" id="GuestLink" class="w-100">
+                                    </div>
+                                    <div class="modify__btns d-flex justify-content-end">
+                                        <button title="Upload New Version" id="copyGuestLink"><i class="fa-solid fa-copy"></i> Copy App URL</button>
+                                        <button title="Add New App" id="copyGuestLinkIframeScript"><i class="fa-solid fa-copy"></i> Copy iFrame Script</button>
+                                        <button title="Delete Selected App" id="tryGuestLink"><i class="fa-solid fa-up-right-from-square"></i> Join Meeting</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <p><strong>This is some placeholder content the Contact tab's associated content.</strong>
-                                Clicking another tab will toggle the visibility of this one for the next.
-                                The tab JavaScript swaps classes to control the content visibility and styling. You can
-                                use it with
-                                tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+                            <div class="steps" id="Meetings_sec">
+                                <div class="step__title">
+                                    <h2>STEP5: Details</h2>
+                                </div>
+                                <div class="step__box d-flex flex-column">
+                                    <div class="generate__url d-flex" >
+                                        <button class="invisible" id="">Generate Meeting URL <i class="fa-solid fa-link"></i> </button>
+                                        <input type="text" placeholder="Guest Link" id="GuestLink" class="w-100">
+                                    </div>
+                                    <div class="modify__btns d-flex justify-content-end">
+                                        <button title="Upload New Version" id="copyGuestLink"><i class="fa-solid fa-copy"></i> Copy App URL</button>
+                                        <button title="Add New App" id="copyGuestLinkIframeScript"><i class="fa-solid fa-copy"></i> Copy iFrame Script</button>
+                                        <button title="Delete Selected App" id="tryGuestLink"><i class="fa-solid fa-up-right-from-square"></i> Join Meeting</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-analysis" role="tabpanel" aria-labelledby="nav-analysis-tab">
                             <p><strong>This is some placeholder content the Contact tab's associated content.</strong>
