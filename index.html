@@ -29,9 +29,9 @@
                             <button class="active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                                 type="button" role="tab" aria-controls="nav-home" aria-selected="true">STANDALONE
                                 APPS</button>
-                            <button class="" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            <!-- <button class="" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
                                 type="button" role="tab" aria-controls="nav-profile"
-                                aria-selected="false">MEETING</button>
+                                aria-selected="false">MEETING</button> -->
                             <button class="" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                                 type="button" role="tab" aria-controls="nav-contact" aria-selected="false">DEDICATED
                                 SERVER APPS</button>
@@ -77,25 +77,27 @@
                                         </div>
                                         <div>
                                             <button title="Add New App" id="AddNewApp" data-toggle="modal"
-                                                data-target="#exampleModal"><i class="fa-solid fa-plus"></i>
+                                                data-target="#modeal4appNameInput"><i class="fa-solid fa-plus"></i>
                                                 Add</button>
-                                              <!-- Modal -->
-                                            <div class="step1__add modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <!-- Modal -->
+                                            <div class="step1__add modal fade" id="modeal4appNameInput" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <!-- <span aria-hidden="true">&times;</span> -->
-                                                            <i class="fa-solid fa-xmark"></i>
-                                                        </button>
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <input type="text" placeholder="Enter App Name"
+                                                                    id="addNewAppANameInList">
+                                                                <button id="ok4addNewAppANameInList">Add</button>
+                                                            </form>
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <input type="text" placeholder="Enter App Name">
-                                                            <button id="ok4addNewAppANameInList">Add</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,16 +133,162 @@
 
                                     <div class="modify__btns d-flex">
                                         <div>
-                                            <button title="Add a New Config" id="AddNewConfig"><i
-                                                    class="fa-solid fa-plus"></i> Add</button>
+                                            <button title="Add a New Config" id="AddNewConfig" data-toggle="modal"
+                                                data-target="#modeal4configNameInput"><i class="fa-solid fa-plus"></i>
+                                                Add</button>
+
+                                            <!-- modal -->
+                                            <div class="step2__add modal fade" id="modeal4configNameInput" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <input type="text" placeholder="Enter Config Name"
+                                                                    id="addNewconfigNameInList">
+                                                                <button id="ok4addNewconfigNameInList">Add</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button title="Delete Selected Config" id="DeleteSelectedConfig"><i
-                                                class="fa-solid fa-trash-can"></i> Delete</button>
-                                        <button title="Edit Selected Config" id="EditSelectedConfig"><i
-                                                class="fa-regular fa-pen-to-square"></i> Edit</button>
-                                        <button title="Send saved Updated Config to connected client's"
-                                            id="SendConfigUpdateOnClientSide"><i
-                                                class="fa-solid fa-tower-broadcast"></i> BroadCast</button>
+                                        <div>
+                                            <button title="Delete Selected Config" id="DeleteSelectedConfig"><i
+                                                    class="fa-solid fa-trash-can"></i> Delete</button>
+                                        </div>
+                                        <div>
+                                            <button title="Edit Selected Config" id="EditSelectedConfig"
+                                                data-toggle="modal" data-target="#myModal"><i
+                                                    class="fa-regular fa-pen-to-square"></i> Edit</button>
+
+                                            <!-- modal -->
+                                            <div class="step2__config modal fade" id="myModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h3 class="configures__name text-center"
+                                                                id="config-name-label">Abir</h3>
+                                                            <div class="config__sec">
+                                                                <select name="" id="AppConfig-filter2"
+                                                                    class="app-filter">
+                                                                    <option value="configs">Select Configures Name
+                                                                    </option>
+                                                                </select>
+
+                                                                <div class="config__btn__tabs">
+                                                                    <div class="card p-3 shadow"
+                                                                        style="max-width: 600px;">
+                                                                        <h2 class="text-center p-3">Card with Tabs</h2>
+                                                                        <nav>
+                                                                            <div class="nav nav-tabs mb-3" id="nav-tab"
+                                                                                role="tablist">
+                                                                                <button class="nav-link"
+                                                                                    id="nav-streaming-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-streaming"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-streaming"
+                                                                                    aria-selected="false">Profile</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-session-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-session"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-session"
+                                                                                    aria-selected="false">Profile</button>
+                                                                                <!-- <button class="nav-link"
+                                                                                    id="nav-streaming-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-streaming"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-streaming"
+                                                                                    aria-selected="false">Profile</button> -->
+                                                                                
+                                                                            </div>
+                                                                        </nav>
+                                                                        <div class="tab-content p-3 border bg-light"
+                                                                            id="nav-tabContent">
+                                                                            <div class="tab-pane fade" id="nav-streaming"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-streaming-tab">
+                                                                                <p><strong>This is some placeholder
+                                                                                        content the Profile tab's
+                                                                                        associated content.</strong>
+                                                                                    Clicking another tab will toggle the
+                                                                                    visibility of this one for the next.
+                                                                                    The tab JavaScript swaps classes to
+                                                                                    control the content visibility and
+                                                                                    styling. You can use it with
+                                                                                    tabs, pills, and any other
+                                                                                    <code>.nav</code>-powered
+                                                                                    navigation.
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-session"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-session-tab">
+                                                                                <p><strong>This is some placeholder
+                                                                                        content the Contact tab's
+                                                                                        associated content.</strong>
+                                                                                    Clicking another tab will toggle the
+                                                                                    visibility of this one for the next.
+                                                                                    The tab JavaScript swaps classes to
+                                                                                    control the content visibility and
+                                                                                    styling. You can use it with
+                                                                                    tabs, pills, and any other
+                                                                                    <code>.nav</code>-powered
+                                                                                    navigation.
+                                                                                </p>
+                                                                            </div>
+                                                                            <!-- <div class="tab-pane fade" id="nav-contact"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-contact-tab">
+                                                                                <p><strong>This is some placeholder
+                                                                                        content the Contact tab's
+                                                                                        associated content.</strong>
+                                                                                    Clicking another tab will toggle the
+                                                                                    visibility of this one for the next.
+                                                                                    The tab JavaScript swaps classes to
+                                                                                    control the content visibility and
+                                                                                    styling. You can use it with
+                                                                                    tabs, pills, and any other
+                                                                                    <code>.nav</code>-powered
+                                                                                    navigation.
+                                                                                </p>
+                                                                            </div> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <form>
+                                                                <input type="text" placeholder="Enter Config Name"
+                                                                    id="addNewconfigNameInList">
+                                                                <button id="ok4addNewconfigNameInList">Add</button>
+                                                            </form> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button title="Send saved Updated Config to connected client's"
+                                                id="SendConfigUpdateOnClientSide"><i
+                                                    class="fa-solid fa-tower-broadcast"></i> BroadCast</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

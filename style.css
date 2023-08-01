@@ -102,7 +102,8 @@ h1, h2, h3, h4, h5, h6, p{
     border: none;
     background: #33AEF2;
     color: #fff;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 15px;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -178,28 +179,37 @@ h1, h2, h3, h4, h5, h6, p{
     width: 185px;
 }
 
-.step1__add .modal-content button {
+.step1__add .modal-content button,
+.step2__add .modal-content button,
+.step2__config .modal-content button {
     padding: 0;
     width: unset;
     background: unset;
     color: #000;
 }
 
-.step1__add .modal-header{
+.step1__add .modal-header,
+.step2__add .modal-header,
+.step2__config .modal-header{
     border: 0px;
 }
 
-.step1__add .modal-header button{
+.step1__add .modal-header button,
+.step2__add .modal-header button,
+.step2__config .modal-header button{
     padding: 20px;
     font-size: 25px;
     font-weight: bold;
 }
 
-.step1__add .modal-body{
+.step1__add .modal-body,
+.step2__add .modal-body
+.step2__config .modal-body{
     border: 0px;
 }
 
-.step1__add .modal-body input{
+.step1__add .modal-body input,
+.step2__add .modal-body input{
     width: 100%;
     outline: none;
     border: 1px solid #33AEF2;
@@ -209,7 +219,8 @@ h1, h2, h3, h4, h5, h6, p{
     margin-bottom: 15px;
 }
 
-.step1__add .modal-body button{
+.step1__add .modal-body button,
+.step2__add .modal-body button{
     background: #33AEF2;
     width: 100%;
     padding: 8px;
@@ -217,4 +228,21 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: bold;
     color: #FFF;
     border-radius: 0;
+}
+
+/* .step1__add.modal {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+} */
+
+.step1__add.modal .modal-dialog,
+.step2__add.modal .modal-dialog {
+    width: 100%;
+    max-width: 500px;
+}
+
+.step2__config .modal-dialog{
+    width: 100%;
+    max-width: 1200px;
 }
