@@ -246,3 +246,70 @@ h1, h2, h3, h4, h5, h6, p{
     width: 100%;
     max-width: 1200px;
 }
+
+/* config edit css */
+.step2__config h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #33AEF2;
+}
+
+.config__btn__tabs .nav-tabs{
+    gap: 8px;
+    background: unset;
+}
+
+.config__btn__tabs .nav-tabs button.nav-link {
+    font-size: 18px;
+    padding: 5px 25px;
+    background: #33AEF2;
+    color: #fff;
+}
+
+.config__btn__tabs .tab-content{
+    border: 1px solid #33AEF2;
+}
+
+.config__btn__tabs .config__content h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #33AEF2;
+    margin-bottom: 15px;
+}
+
+.config__btn__tabs .config__content form{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.config__btn__tabs .config__content form label {
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    color: #33AEF2;
+    margin-bottom: 4px;
+}
+
+.config__btn__tabs .config__content form select,  
+.config__btn__tabs .config__content form input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #33AEF2;
+    padding: 5px;
+    outline: none;
+}
+
+.config__btn__tabs .config__content form #LunchMostRecentAlreadyAvailable{
+    height: 20px;
+    width: 20px;
+}
+
+.config__btn__tabs .config__content .configTerm{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* config edit css */

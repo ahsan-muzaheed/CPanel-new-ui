@@ -190,86 +190,185 @@
                                                                 </select>
 
                                                                 <div class="config__btn__tabs">
-                                                                    <div class="card p-3 shadow"
-                                                                        style="max-width: 600px;">
-                                                                        <h2 class="text-center p-3">Card with Tabs</h2>
+                                                                    <div class="" style="width: 100%;">
                                                                         <nav>
                                                                             <div class="nav nav-tabs mb-3" id="nav-tab"
                                                                                 role="tablist">
-                                                                                <button class="nav-link"
+                                                                                <button class="nav-link active"
                                                                                     id="nav-streaming-tab"
                                                                                     data-bs-toggle="tab"
                                                                                     data-bs-target="#nav-streaming"
                                                                                     type="button" role="tab"
                                                                                     aria-controls="nav-streaming"
-                                                                                    aria-selected="false">Profile</button>
+                                                                                    aria-selected="true">Streaming</button>
                                                                                 <button class="nav-link"
                                                                                     id="nav-session-tab"
                                                                                     data-bs-toggle="tab"
                                                                                     data-bs-target="#nav-session"
                                                                                     type="button" role="tab"
                                                                                     aria-controls="nav-session"
-                                                                                    aria-selected="false">Profile</button>
-                                                                                <!-- <button class="nav-link"
-                                                                                    id="nav-streaming-tab"
+                                                                                    aria-selected="false">Session</button>
+                                                                                <button class="nav-link" id="nav-ui-tab"
                                                                                     data-bs-toggle="tab"
-                                                                                    data-bs-target="#nav-streaming"
+                                                                                    data-bs-target="#nav-ui"
                                                                                     type="button" role="tab"
-                                                                                    aria-controls="nav-streaming"
-                                                                                    aria-selected="false">Profile</button> -->
-                                                                                
+                                                                                    aria-controls="nav-ui"
+                                                                                    aria-selected="false">UI</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-developer-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-developer"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-developer"
+                                                                                    aria-selected="false">Developer
+                                                                                    Option</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-sound-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-sound"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-sound"
+                                                                                    aria-selected="false">Sound</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-video-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-video"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-video"
+                                                                                    aria-selected="false">Video</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-mouse-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-mouse"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-mouse"
+                                                                                    aria-selected="false">Mouse</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-keyboard-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-keyboard"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-keyboard"
+                                                                                    aria-selected="false">Keyboard</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-customization-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-customization"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-customization"
+                                                                                    aria-selected="false">Customization</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-loadingscrn-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-loadingscrn"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-loadingscrn"
+                                                                                    aria-selected="false">Loading
+                                                                                    Screen</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-experimental-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-experimental"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-experimental"
+                                                                                    aria-selected="false">Experimental</button>
+                                                                                <button class="nav-link"
+                                                                                    id="nav-adminCon-tab"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nav-adminCon"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="nav-adminCon"
+                                                                                    aria-selected="false">Admin
+                                                                                    Config</button>
                                                                             </div>
                                                                         </nav>
-                                                                        <div class="tab-content p-3 border bg-light"
+                                                                        <div class="tab-content p-3"
                                                                             id="nav-tabContent">
-                                                                            <div class="tab-pane fade" id="nav-streaming"
-                                                                                role="tabpanel"
+                                                                            <div class="tab-pane fade active show"
+                                                                                id="nav-streaming" role="tabpanel"
                                                                                 aria-labelledby="nav-streaming-tab">
-                                                                                <p><strong>This is some placeholder
-                                                                                        content the Profile tab's
-                                                                                        associated content.</strong>
-                                                                                    Clicking another tab will toggle the
-                                                                                    visibility of this one for the next.
-                                                                                    The tab JavaScript swaps classes to
-                                                                                    control the content visibility and
-                                                                                    styling. You can use it with
-                                                                                    tabs, pills, and any other
-                                                                                    <code>.nav</code>-powered
-                                                                                    navigation.
-                                                                                </p>
+                                                                                <div class="config__content" id="appOptions_sec">
+                                                                                    <h4>STREAMING OPTIONS</h4>
+                                                                                    <form action="">
+                                                                                        <div id="streamingPrority">
+                                                                                            <label for="sPriority">Streaming Prority</label>
+                                                                                            <select name="" id="streamingProrityFilter">
+                                                                                                <option value="FasterConnection">FasterConnection(Speed)</option>
+                                                                                                <option value="LowLatency">Low Latency(Quality)</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label for="sPriority">Password To Start Streaming</label>
+                                                                                            <input type="text" id="passwordToStart" placeholder="Try Password To Start">
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label for="sPriority">Url Expiry Date</label>
+                                                                                            <input type="datetime-local" id="urlExpiretime" value="0000-00-00T00:00:00" min="2012-01-01T22:22:55" max="2030-12-31T23:59:59">
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label for="LunchMostRecentAlreadyAvailable" class="checkbox-label" data-toggle="tooltip" data-original-title="Set to true to LunchMostRecentAlreadyAvailable while latest verison getting downlaoded">
+                                                                                            <input type="checkbox" id="LunchMostRecentAlreadyAvailable">
+                                                                                            Lunch Most Recent Already Available
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-session"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-session-tab">
-                                                                                <p><strong>This is some placeholder
-                                                                                        content the Contact tab's
-                                                                                        associated content.</strong>
-                                                                                    Clicking another tab will toggle the
-                                                                                    visibility of this one for the next.
-                                                                                    The tab JavaScript swaps classes to
-                                                                                    control the content visibility and
-                                                                                    styling. You can use it with
-                                                                                    tabs, pills, and any other
-                                                                                    <code>.nav</code>-powered
-                                                                                    navigation.
-                                                                                </p>
+                                                                                session
                                                                             </div>
-                                                                            <!-- <div class="tab-pane fade" id="nav-contact"
+                                                                            <div class="tab-pane fade" id="nav-ui"
                                                                                 role="tabpanel"
-                                                                                aria-labelledby="nav-contact-tab">
-                                                                                <p><strong>This is some placeholder
-                                                                                        content the Contact tab's
-                                                                                        associated content.</strong>
-                                                                                    Clicking another tab will toggle the
-                                                                                    visibility of this one for the next.
-                                                                                    The tab JavaScript swaps classes to
-                                                                                    control the content visibility and
-                                                                                    styling. You can use it with
-                                                                                    tabs, pills, and any other
-                                                                                    <code>.nav</code>-powered
-                                                                                    navigation.
-                                                                                </p>
-                                                                            </div> -->
+                                                                                aria-labelledby="nav-ui-tab">
+                                                                                ui
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="nav-developer" role="tabpanel"
+                                                                                aria-labelledby="nav-developer-tab">
+                                                                                developer
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-sound"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-sound-tab">
+                                                                                sound
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-video"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-video-tab">
+                                                                                video
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-mouse"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-mouse-tab">
+                                                                                mouse
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-keyboard"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-keyboard-tab">
+                                                                                keyboard
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="nav-customization" role="tabpanel"
+                                                                                aria-labelledby="nav-customization-tab">
+                                                                                customization
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="nav-loadingscrn" role="tabpanel"
+                                                                                aria-labelledby="nav-loadingscrn-tab">
+                                                                                loadingscrn
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="nav-experimental" role="tabpanel"
+                                                                                aria-labelledby="nav-experimental-tab">
+                                                                                experimental
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="nav-adminCon"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="nav-adminCon-tab">
+                                                                                adminCon
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
