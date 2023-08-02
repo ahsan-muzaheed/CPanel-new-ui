@@ -368,4 +368,18 @@ a {
 
 }
 
+.tab__float__btns{
+    position: sticky;
+    right: 20px;
+    bottom: 20px;
+}
+
+.tab__float__btns button{
+    width: 170px !important;
+    background: #33AEF2 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    padding: 4px !important;
+}
+
 /* config edit css */
