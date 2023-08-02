@@ -287,29 +287,55 @@
                                                                             <div class="tab-pane fade active show"
                                                                                 id="nav-streaming" role="tabpanel"
                                                                                 aria-labelledby="nav-streaming-tab">
-                                                                                <div class="config__content" id="appOptions_sec">
+                                                                                <div class="config__content config__str"
+                                                                                    id="appOptions_sec">
                                                                                     <h4>STREAMING OPTIONS</h4>
                                                                                     <form action="">
                                                                                         <div id="streamingPrority">
-                                                                                            <label for="sPriority">Streaming Prority</label>
-                                                                                            <select name="" id="streamingProrityFilter">
-                                                                                                <option value="FasterConnection">FasterConnection(Speed)</option>
-                                                                                                <option value="LowLatency">Low Latency(Quality)</option>
+                                                                                            <label
+                                                                                                for="sPriority">Streaming
+                                                                                                Prority</label>
+                                                                                            <select name=""
+                                                                                                id="streamingProrityFilter">
+                                                                                                <option
+                                                                                                    value="FasterConnection">
+                                                                                                    FasterConnection(Speed)
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="LowLatency">
+                                                                                                    Low Latency(Quality)
+                                                                                                </option>
                                                                                             </select>
                                                                                         </div>
                                                                                         <div id="">
-                                                                                            <label for="sPriority">Password To Start Streaming</label>
-                                                                                            <input type="text" id="passwordToStart" placeholder="Try Password To Start">
+                                                                                            <label
+                                                                                                for="sPriority">Password
+                                                                                                To Start
+                                                                                                Streaming</label>
+                                                                                            <input type="text"
+                                                                                                id="passwordToStart"
+                                                                                                placeholder="Try Password To Start">
                                                                                         </div>
                                                                                         <div id="">
-                                                                                            <label for="sPriority">Url Expiry Date</label>
-                                                                                            <input type="datetime-local" id="urlExpiretime" value="0000-00-00T00:00:00" min="2012-01-01T22:22:55" max="2030-12-31T23:59:59">
+                                                                                            <label for="sPriority">Url
+                                                                                                Expiry Date</label>
+                                                                                            <input type="datetime-local"
+                                                                                                id="urlExpiretime"
+                                                                                                value="0000-00-00T00:00:00"
+                                                                                                min="2012-01-01T22:22:55"
+                                                                                                max="2030-12-31T23:59:59">
                                                                                         </div>
                                                                                     </form>
                                                                                     <div class="configTerm">
-                                                                                        <label for="LunchMostRecentAlreadyAvailable" class="checkbox-label" data-toggle="tooltip" data-original-title="Set to true to LunchMostRecentAlreadyAvailable while latest verison getting downlaoded">
-                                                                                            <input type="checkbox" id="LunchMostRecentAlreadyAvailable">
-                                                                                            Lunch Most Recent Already Available
+                                                                                        <label
+                                                                                            for="LunchMostRecentAlreadyAvailable"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Set to true to LunchMostRecentAlreadyAvailable while latest verison getting downlaoded">
+                                                                                            <input type="checkbox"
+                                                                                                id="LunchMostRecentAlreadyAvailable">
+                                                                                            Lunch Most Recent Already
+                                                                                            Available
                                                                                         </label>
                                                                                     </div>
                                                                                 </div>
@@ -317,37 +343,342 @@
                                                                             <div class="tab-pane fade" id="nav-session"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-session-tab">
-                                                                                session
+                                                                                <div class="config__content config__session"
+                                                                                    id="session_sec">
+                                                                                    <h4>SESSION OPTIONS</h4>
+                                                                                    <form action="">
+                                                                                        <div id="streamingPrority">
+                                                                                            <label for="">Session
+                                                                                                Duration(Minutes)</label>
+                                                                                            <input type="number"
+                                                                                                id="ExpireTime"
+                                                                                                value="15" min="1"
+                                                                                                max="300">
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label for="">AFK
+                                                                                                warnTimeout (Minutes)
+                                                                                            </label>
+                                                                                            <input type="text"
+                                                                                                id="afkWarnTimeout"
+                                                                                                value="5" min="1"
+                                                                                                max="100"
+                                                                                                title="The time to elapse before warning the user they are inactive.">
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label for="">AFK
+                                                                                                closeTimeout (Minutes)
+                                                                                            </label>
+                                                                                            <input type="number"
+                                                                                                id="afkCloseTimeout"
+                                                                                                value="1" min="1"
+                                                                                                max="100"
+                                                                                                title="The time after the warning when we disconnect the user.">
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label for="isAfkEnabled"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Set to true to enable the AFK system.">
+                                                                                            <input type="checkbox"
+                                                                                                id="isAfkEnabled">
+                                                                                            is AFK Enabled
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-ui"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-ui-tab">
-                                                                                ui
+                                                                                <div class="config__content config__ui"
+                                                                                    id="ui_sec">
+                                                                                    <h4>UI OPTIONS</h4>
+                                                                                    <div class="configTerm">
+                                                                                        <label for="enableScreenshot"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Should hide or display screenshot window ">
+                                                                                            <input type="checkbox"
+                                                                                                id="enableScreenshot"
+                                                                                                name="enableScreenshot">
+                                                                                            Enable Screenshot
+                                                                                        </label>
+                                                                                        <label
+                                                                                            for="shouldDisplayContorlBar"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Should hide or display Control bar">
+                                                                                            <input type="checkbox"
+                                                                                                id="shouldDisplayContorlBar"
+                                                                                                name="shouldDisplayContorl">
+                                                                                            Should Display Contorl Bar
+                                                                                        </label>
+                                                                                        <label
+                                                                                            for="enableRuntimeNotifications"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Should hide or display notifications">
+                                                                                            <input type="checkbox"
+                                                                                                id="enableRuntimeNotifications"
+                                                                                                name="enableRuntimeNotifications">
+                                                                                            Enable Runtime Notifications
+                                                                                        </label>
+                                                                                        <label for="showPsControl"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Disaply video quality Cotrol menu ">
+                                                                                            <input type="checkbox"
+                                                                                                id="showPsControl"
+                                                                                                name="showPsControl">
+                                                                                            Show Pixel Stremaing Quaity
+                                                                                            Control
+                                                                                        </label>
+                                                                                        <a href="https://eagle3dstreaming.com/how-to-use-the-pixel-stream-control-kit/"
+                                                                                            target="_blank">Details</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-developer" role="tabpanel"
                                                                                 aria-labelledby="nav-developer-tab">
-                                                                                developer
+                                                                                <div class="config__content config__dvlpr"
+                                                                                    id="developerOptions_sec">
+                                                                                    <h4>DEVELOPER OPTIONS</h4>
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label for="">Parameters To
+                                                                                                Pass to App</label>
+                                                                                            <input type="text"
+                                                                                                id="CmdLineParameters"
+                                                                                                placeholder="parameters seprated by space(Ex. -paramNoValue -param1=value1  -param2=value2)">
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label
+                                                                                            for="shouldAppendOveridingcmdLineArgs"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="should append overriding cmdLine Argument otherwise it will be replaced?">
+                                                                                            <input type="checkbox"
+                                                                                                id="shouldAppendOveridingcmdLineArgs">
+                                                                                            Lunch Most Recent Already
+                                                                                            Available
+                                                                                        </label>
+                                                                                    </div>
+
+                                                                                    <h4 class="mt-3">Logs</h4>
+                                                                                    <div class="configTerm">
+                                                                                        <label for="shouldDebugUE4"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title=" Print UE4 Log in Browser console">
+                                                                                            <input type="checkbox"
+                                                                                                id="shouldDebugUE4">
+                                                                                            <a target="_blank"
+                                                                                                href="https://www.youtube.com/watch?v=-YuC83LsqT4&list=PLr2PLtcbD6PmTJ_wV3v8-q5O-MtxglvST&index=8">Print
+                                                                                                UE4 Log in Browser
+                                                                                                console</a>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <div class="configTerm">
+                                                                                        <label
+                                                                                            for="shouldDownloadUE4LogOnCLientSide"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Download UE4 Log On Client Side Upon Crash">
+                                                                                            <input type="checkbox"
+                                                                                                id="shouldDownloadUE4LogOnCLientSide">
+                                                                                            <a target="_blank"
+                                                                                                href="https://www.youtube.com/watch?v=bVUKprYwJuU&list=PLr2PLtcbD6PmTJ_wV3v8-q5O-MtxglvST&index=9">Download
+                                                                                                UE4 Log On Client Side
+                                                                                                Upon Crash</a>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <form class="mt-3" action="">
+                                                                                        <div id="">
+                                                                                            <label for="">Email to send
+                                                                                                Log uplon app
+                                                                                                crash</label>
+                                                                                            <input type="text"
+                                                                                                id="developersEmail"
+                                                                                                placeholder="Type Email to send log upon crash"
+                                                                                                data-original-title="Type Email to use for debugging">
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-sound"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-sound-tab">
-                                                                                sound
+                                                                                <div class="config__content config__sound"
+                                                                                    id="SoundOptions_sec">
+                                                                                    <h4>AUDIO OPTIONS</h4>
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="sPriority">VOIP</label>
+
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label id="useVOIPlabel"
+                                                                                            for="useVOIP"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Set to true to LunchMostRecentAlreadyAvailable while latest verison getting downlaoded">
+                                                                                            <input type="checkbox"
+                                                                                                id="useVOIP">
+                                                                                            Use VOIP <span>Beta</span>
+                                                                                        </label>
+                                                                                        <a href="https://eagle3dstreaming.com/how-to-use-voip-on-the-eagle-3d-pixel-streaming-platform/"
+                                                                                            target="_blank">Details</a>
+                                                                                    </div>
+                                                                                    <form action="" class="mt-3"
+                                                                                        style="grid-template-columns: repeat(3, 1fr);">
+                                                                                        <label for="">Audio Quality
+                                                                                            Control</label>
+                                                                                        <select name="audioType-Filter"
+                                                                                            id="audioType-Filter">
+                                                                                            <option value="stereo">
+                                                                                                Stereo</option>
+                                                                                            <option value="mono">Mono
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <input type="text"
+                                                                                            id="audioMaxAverageBitrate"
+                                                                                            value="128000">
+                                                                                    </form>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-video"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-video-tab">
-                                                                                video
+                                                                                <div class="config__content config__video"
+                                                                                    id="VideoOptions_sec">
+                                                                                    <h4>VIDEO OPTIONS</h4>
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="sPriority">Resolution</label>
+                                                                                            <select name=""
+                                                                                                id="resolutionFilter">
+                                                                                                <option value="720p"
+                                                                                                    selected>720p
+                                                                                                </option>
+                                                                                                <option value="1080p"
+                                                                                                    selected>1080p
+                                                                                                </option>
+                                                                                                <option value="Max"
+                                                                                                    selected>Max
+                                                                                                </option>
+                                                                                                <option value="Custom"
+                                                                                                    selected>Custom
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label id=""
+                                                                                            for="ShouldAutoPlay"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="AutoPlay Stream">
+                                                                                            <input type="checkbox"
+                                                                                                id="ShouldAutoPlay">
+                                                                                            Should AutoPlay
+                                                                                        </label> <br>
+                                                                                        <label id=""
+                                                                                            for="PreventPixalizationByCompromisingResolution"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Prevent pixalization by decreasing Resolution on net speed drop">
+                                                                                            <input type="checkbox"
+                                                                                                id="PreventPixalizationByCompromisingResolution">
+                                                                                            Prevent Pixalization By
+                                                                                            Compromising Resolution
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-mouse"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-mouse-tab">
-                                                                                mouse
+                                                                                <div class="config__content config__mouse"
+                                                                                    id="MouseOptions_sec">
+                                                                                    <h4>VIDEO OPTIONS</h4>
+
+                                                                                    <div class="configTerm">
+                                                                                        <label id=""
+                                                                                            for="fakeMouseWithTouches"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="fakeMouseWithTouches in mobile">
+                                                                                            <input type="checkbox"
+                                                                                                id="fakeMouseWithTouches">
+                                                                                            Fake Mouse With Touches
+                                                                                        </label> <a
+                                                                                            href="https://eagle3dstreaming.com/eagle-guide-to-touch-components-for-mobile-devices/"
+                                                                                            target="_blank">Details</a>
+                                                                                        <br>
+                                                                                        <label id=""
+                                                                                            for="showbrowserMouse"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Show browser mouse">
+                                                                                            <input type="checkbox"
+                                                                                                id="showbrowserMouse"
+                                                                                                name="showbrowserMouse">
+                                                                                            Show Browser Mouse
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <form action=""
+                                                                                        class="mt-3 d-block">
+                                                                                        <label for="">Mouse Control
+                                                                                            Scheme</label>
+                                                                                        <select
+                                                                                            name="MouseControlScheme-Filter"
+                                                                                            id="MouseControlScheme-Filter">
+                                                                                            <option value="0" selected>
+                                                                                                LockedMouse</option>
+                                                                                            <option value="1" selected>
+                                                                                                HoveringMouse</option>
+                                                                                        </select>
+                                                                                    </form>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-keyboard"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-keyboard-tab">
-                                                                                keyboard
+                                                                                <div class="config__content config__mouse"
+                                                                                    id="KeyboardOptions_sec">
+                                                                                    <h4>KEYBOARD OPTIONS</h4>
+
+                                                                                    <div class="configTerm">
+                                                                                        <label id=""
+                                                                                            for="useExtendedTyping"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Displaying typing interface over Ue4 UMG text box. Essential for mobile">
+                                                                                            <input type="checkbox"
+                                                                                                id="useExtendedTyping"
+                                                                                                name="useExtendedTyping">
+                                                                                            Use Extended Typing
+                                                                                            <span>Beta</span>
+                                                                                        </label> <br>
+                                                                                        <label id=""
+                                                                                            for="suppressBrowserKeys"
+                                                                                            class=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="skip specialy keys like f1 to f11,...">
+                                                                                            <input type="checkbox"
+                                                                                                id="suppressBrowserKeys"
+                                                                                                name="showbrowserMouse">
+                                                                                            Suppress Browser Keys
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-customization" role="tabpanel"
@@ -357,17 +688,328 @@
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-loadingscrn" role="tabpanel"
                                                                                 aria-labelledby="nav-loadingscrn-tab">
-                                                                                loadingscrn
+                                                                                <div class="config__content config__ldrScrn"
+                                                                                    id="LoadingScreen_sec">
+                                                                                    <h4>LOADING SCREEN <span>Beta</span>
+                                                                                    </h4>
+                                                                                    <div class="modify__btns d-flex">
+                                                                                        <button id="UploadVideoAssets">
+                                                                                            <i
+                                                                                                class="fa-solid fa-upload"></i>
+                                                                                            Upload Video Assets</button>
+                                                                                        <button
+                                                                                            id="refreshVideoAssetsList"><i
+                                                                                                class="fa-solid fa-rotate-right"></i>Refresh
+                                                                                            Video Assets List </button>
+                                                                                    </div>
+                                                                                    <form action="">
+                                                                                        <div id="" class="mt-3">
+                                                                                            <label for="">Choose video
+                                                                                                Assets <span>mp4
+                                                                                                    only</span></label>
+                                                                                            <select name=""
+                                                                                                id="VideoAssets-filter">
+                                                                                                <option
+                                                                                                    value="https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4">
+                                                                                                    https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4">
+                                                                                                    https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4">
+                                                                                                    https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4">
+                                                                                                    https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4">
+                                                                                                    https://test-upload-app.s3.amazonaws.com/demo/VideoAssets/-757.mp4
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <div class="modify__btns">
+                                                                                                <button class="mt-2"
+                                                                                                    id="addLoadingVideoFromDropDownToList"
+                                                                                                    title="Add New App"><i
+                                                                                                        class="fa-solid fa-plus"></i>
+                                                                                                    Add</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div id="" class="mt-3">
+                                                                                            <label for="">External Url
+                                                                                                to Add </label>
+                                                                                            <input type="text"
+                                                                                                id="VideoURL2play"
+                                                                                                title="Paste url to Video assets"
+                                                                                                placeholder="Paste Video assets link to attach into the list">
+                                                                                            <div class="modify__btns">
+                                                                                                <button class="mt-2"
+                                                                                                    id="addLoadingVideoFromDirectUrlTextToList"
+                                                                                                    title="Add New App"><i
+                                                                                                        class="fa-solid fa-plus"></i>
+                                                                                                    Add</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="sPriority">Selected
+                                                                                                Video Assets</label>
+                                                                                            <select name=""
+                                                                                                id="loadingVideoList">
+                                                                                                <option value="">
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <div class="configTerm">
+                                                                                        <label
+                                                                                            for="DoRandomSuffleInLoadingVideoAssets"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Do Random Shuffle In list.">
+                                                                                            <input type="checkbox"
+                                                                                                id="DoRandomSuffleInLoadingVideoAssets">
+                                                                                            Random Shuffle?
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-experimental" role="tabpanel"
                                                                                 aria-labelledby="nav-experimental-tab">
-                                                                                experimental
+                                                                                    <div class="config__content config__expr"
+                                                                                    id="Experimental_sec">
+                                                                                    <div class="configTerm d-flex gap-2 flex-column mb-3">
+                                                                                        <label
+                                                                                            for="PixelStreamingHudStats"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Show internal WebRTC stats.The stats can also be queried programmatically using the appropriate stat changed delegate in UPixelStreamingDelegates">
+                                                                                            <input type="checkbox"
+                                                                                                id="PixelStreamingHudStats"
+                                                                                                name="PixelStreamingHudStats">
+                                                                                            Pixel Streaming Hud Stats
+                                                                                        </label>
+                                                                                        <label
+                                                                                            for="PixelStreamingDisableLatencyTester"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="">
+                                                                                            <input type="checkbox"
+                                                                                                id="PixelStreamingDisableLatencyTester"
+                                                                                                name="PixelStreamingDisableLatencyTester">
+                                                                                                Pixel Streaming Disable Latency Tester
+                                                                                        </label>
+                                                                                        <label
+                                                                                            for="PixelStreamingHideCursor"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="">
+                                                                                            <input type="checkbox"
+                                                                                                id="PixelStreamingHideCursor"
+                                                                                                name="PixelStreamingHideCursor">
+                                                                                                PixelStreamingHideCursor
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <h4
+                                                                                        for="">ENCODER CONFIGURATION</h4>
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">select an encoder codec</label>
+                                                                                            <select name=""
+                                                                                                id="PixelStreamingEncoderCodec-Filter">
+                                                                                                <option
+                                                                                                    value="H264">
+                                                                                                    H264
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="VP8">
+                                                                                                    VP8
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="VP9">
+                                                                                                    VP9
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder Target BitRate</label>
+                                                                                                <input type="number" id="PixelStreamingEncoderTargetBitrate" placeholder="PixelStreamingEncoderTargetBitrate" value="-1">
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder Max Bit Rate</label>
+                                                                                                <input type="number" id="PixelStreamingEncoderMaxBitrate" placeholder="Does not work in CBR rate control mode with NVENC." value="20000000">
+
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                    <div class="configTerm mb-3">
+                                                                                        <label 
+                                                                                            for="PixelStreamingDebugDumpFrame"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Dumps frames from the encoder to a file on disk for debugging purposes.">
+                                                                                            <input type="checkbox" 
+                                                                                                id="PixelStreamingDebugDumpFrame"
+                                                                                                name="PixelStreamingDebugDumpFrame">
+                                                                                            Pixel Streaming Hud Stats
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <form>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder MinQP</label>
+                                                                                                <input type="number" id="PixelStreamingEncoderMinQP" placeholder="PixelStreamingEncoderMinQP" value="-1">
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder MaxQP</label>
+                                                                                                <input type="number" id="PixelStreamingEncoderMaxQP" placeholder="PixelStreamingEncoderMaxQP" value="-1">
+                                                                                        </div>
+
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder Rate Control</label>
+                                                                                                <select name="" id="PixelStreamingEncoderRateControl-Filter">
+                                                                                                    <option value="ConstQP">ConstQP</option>
+                                                                                                    <option value="VBR">VBR</option>
+                                                                                                    <option value="CBR">CBR</option>
+                                                                                                </select>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                    <div class="configTerm">
+                                                                                        <label
+                                                                                            for="PixelStreamingEnableFillerData"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            title data-original-title="Maintains constant bitrate by filling with junk data. Note: Not required with CBR and MinQP = -1.">
+                                                                                            <input type="checkbox"
+                                                                                                id="PixelStreamingEnableFillerData" name="PixelStreamingEnableFillerData">
+                                                                                                Pixel Streaming Enable Filler Data
+                                                                                        </label>
+                                                                                        <label
+                                                                                            for="PixelStreamingDisableLatencyTester"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Set to true to LunchMostRecentAlreadyAvailable while latest verison getting downlaoded">
+                                                                                            <input type="checkbox"
+                                                                                                id="PixelStreamingDisableLatencyTester" name="PixelStreamingDisableLatencyTester">
+                                                                                                Pixel Streaming Disable Latency Tester
+                                                                                        </label>
+                                                                                    </div>
+
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming Encoder Multi Pass</label>
+                                                                                                <select name="" id="PixelStreamingEncoderMultipass-Filter">
+                                                                                                    <option value="DISABLED">DISABLED</option>
+                                                                                                    <option value="QUARTER">QUARTER</option>
+                                                                                                    <option value="FULL" selected>FULL</option>
+                                                                                                </select>
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Pixel Streaming H264 Profile</label>
+                                                                                                <select name="" id="PixelStreamingH264Profile-Filter">
+                                                                                                    <option value="AUTO">AUTO</option>
+                                                                                                    <option value="BASELINE" selected>BASELINE</option>
+                                                                                                    <option value="MAIN">MAIN</option>
+                                                                                                    <option value="HIGH">HIGH</option>
+                                                                                                    <option value="HIGH444">HIGH444</option>
+                                                                                                    <option value="STEREO">STEREO</option>
+                                                                                                    <option value="SVC_TEMPORAL_SCALABILITY">SVC TEMPORAL SCALABILITY</option>
+                                                                                                    <option value="PROGRESSIVE_HIGH">PROGRESSIVE HIGH</option>
+                                                                                                    <option value="CONSTRAINED_HIGH">CONSTRAINED HIGH</option>
+                                                                                                </select>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade" id="nav-adminCon"
                                                                                 role="tabpanel"
                                                                                 aria-labelledby="nav-adminCon-tab">
-                                                                                adminCon
+                                                                                <div class="config__content config__admin">
+                                                                                    <div class="configTerm mb-3 d-flex flex-column">
+                                                                                        <label 
+                                                                                            for="isAdminDebugging"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="Debugging mode">
+                                                                                            <input type="checkbox" 
+                                                                                                id="isAdminDebugging"
+                                                                                                name="">
+                                                                                                Is Debugging
+                                                                                        </label>
+                                                                                        <label 
+                                                                                            for="ShouldUseCdn"
+                                                                                            class="checkbox-label"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-original-title="ShouldUseCdn">
+                                                                                            <input type="checkbox" 
+                                                                                                id="ShouldUseCdn"
+                                                                                                name="">
+                                                                                                Should Use CDN
+                                                                                        </label>
+                                                                                    </div>
+    
+                                                                                    <form>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Turn Server Mode (browser side)</label>
+                                                                                                <select name="" id="TurnServerFilter">
+                                                                                                    <option value="0" selected>Geo-LocationBased Sytem1</option>
+                                                                                                    <option value="1">Epic Turn Server(On EL machine)</option>
+                                                                                                    <option value="2">Co-Turn Server(On EL machine)</option>
+                                                                                                    <option value="10">Xirys Turn Server(On EU)</option>
+                                                                                                    <option value="11">E3DS Turn Server(N. Virginia)</option>
+                                                                                                    <option value="40">twilio global Turn Server</option>
+                                                                                                    <option value="20">No Turn Server(islite)</option>
+                                                                                                </select>
+                                                                                        </div>
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Turn Server Mode(Streamer side)</label>
+                                                                                                <select name="" id="StreamerTurnServerFilter">
+                                                                                                    <option value="0" selected>Geo-LocationBased Sytem1</option>
+                                                                                                    <option value="1">Epic Turn Server(On EL machine)</option>
+                                                                                                    <option value="2">Co-Turn Server(On EL machine)</option>
+                                                                                                    <option value="10">Xirys Turn Server(On EU)</option>
+                                                                                                    <option value="11">E3DS Turn Server(N. Virginia)</option>
+                                                                                                    <option value="40">twilio global Turn Server</option>
+                                                                                                    <option value="20">No Turn Server(islite)</option>
+                                                                                                    <option value="100">Use same turn server used by Host's browser </option>
+                                                                                                </select>
+                                                                                        </div>
+    
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                                for="">Emulated GeoLocation (LATITUDE, LONGITUDE)</label>
+                                                                                                <input class="mb-2" type="number" id="emulatedLatitude" placeholder="latitude" >
+                                                                                                <input class="mb-2" type="number" id="emulatedLongitude" placeholder="longitude" >
+                                                                                                <select class="mb-2" name="" id="EmulatedGeoLocationFilter">
+                                                                                                    <option hidden selected>None</option>
+                                                                                                    <option value="us-west-1">N. California</option>
+                                                                                                    <option value="us-east-1">N. Virginia</option>
+                                                                                                    <option value="eu-central-1">Frankfurt</option>
+                                                                                                    <option value="ap-south-1">Mumbai</option>
+                                                                                                    <option value="eu-west-2">London</option>
+                                                                                                    <option value="ap-southeast-2">Sydney</option>
+                                                                                                    <option value="sa-east-1">Sao Paulo</option>
+                                                                                                </select>
+                                                                                        </div>
+    
+                                                                                        
+                                                                                    </form>
+                                                                                </div>
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
