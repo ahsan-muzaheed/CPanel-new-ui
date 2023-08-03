@@ -24,6 +24,35 @@ a {
     /* color: unset; */
 }
 
+.for__scroll{
+    /* width: 100%; */
+    width: 1470px;
+}
+
+style__scroll
+
+/* ===== custom scrollbar css start===== */
+.style__scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.style__scroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.style__scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #33AEF2;
+}
+/* ===== custom scrollbar css end=====*/
+
 .cp__content {
     padding: 40px 0;
 }
@@ -37,7 +66,7 @@ a {
     display: flex;
     gap: 30px;
     background-color: #33AEF2;
-    padding: 10px 0;
+    padding: 10px 50px;
 }
 
 .cp__inner .nav button {
@@ -56,7 +85,7 @@ a {
 }
 
 .tab__body {
-    height: 400px;
+    height: 470px;
     overflow: auto;
 }
 
@@ -65,7 +94,8 @@ a {
 }
 
 .steps {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    margin-bottom: 22px;
 }
 
 .steps .step__title h2 {
@@ -81,6 +111,8 @@ a {
     border: 1px solid #33AEF2;
     color: #666;
     border-radius: 1px;
+
+    padding: 8px 12px;
 }
 
 .app-filter,
@@ -89,7 +121,7 @@ a {
 .ServerApps-filter,
 .para__pass input,
 .RunningDedicatedServerMachines-filter,
-.RunningAppsOnSelctedDSMachine-filter {
+.RunningAppsOnSelctedDSMachine-filter, .alocator__step__box input {
     padding: 8px 12px;
     width: 100%;
     max-width: 400px;
@@ -298,7 +330,7 @@ a {
     gap: 15px;
 }
 
-.config__btn__tabs .config__content form label {
+.config__btn__tabs .config__content form label, .allocator__step__box label {
     font-size: 19px;
     font-weight: bold;
     display: block;
@@ -351,10 +383,11 @@ a {
     gap: 15px;
 }
 
-.config__ldrScrn button {
+.config__ldrScrn button, .config__custom button {
     background: #33AEF2 !important;
     padding: 7px 20px !important;
     color: #fff !important;
+    border-radius: 10px;
 }
 
 .config__content span {
@@ -368,7 +401,7 @@ a {
 
 }
 
-.tab__float__btns{
+.tab__float__btns, .custom__float{
     position: sticky;
     right: 20px;
     bottom: 20px;
@@ -380,6 +413,34 @@ a {
     color: #fff !important;
     font-size: 20px !important;
     padding: 4px !important;
+}
+
+.custom__float{
+    /* position: sticky;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); */
+    bottom: 50%;
+    transform: translateY(-50%);
+
+    background: #eee;
+    padding: 10px;
+    width: 100%;
+    max-width: 375px;
+    margin-left: auto;
+    overflow: auto;
+}
+
+.custom__float .icon img{
+    border-radius: 5px;
+}
+
+.custom__float .icon img:hover{
+    border: 2px solid #33AEF2;
+}
+
+.step__box.allocator__step__box input{
+    height: 36px;
 }
 
 /* config edit css */

@@ -24,8 +24,8 @@
                 <h1 class="text-center fw-bold mb-5">Learning Center</h1>
 
                 <div style="border: 1px solid #33AEF2; border-radius: 5px;">
-                    <nav>
-                        <div class="nav nav-tabs mb-3 justify-content-center" id="nav-tab" role="tablist">
+                    <nav class="style__scroll" style="overflow: scroll hidden;">
+                        <div class="nav nav-tabs justify-content-center flex-nowrap for__scroll" id="nav-tab" role="tablist">
                             <button class="active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                                 type="button" role="tab" aria-controls="nav-home" aria-selected="true">STANDALONE
                                 APPS</button>
@@ -35,12 +35,18 @@
                             <button class="" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                                 type="button" role="tab" aria-controls="nav-contact" aria-selected="false">DEDICATED
                                 SERVER APPS</button>
+                            <button class="" id="nav-automation-tab" data-bs-toggle="tab" data-bs-target="#nav-automation"
+                                type="button" role="tab" aria-controls="nav-automation" aria-selected="false">
+                                AUTOMATION</button>
+                            <button class="" id="nav-allocator-tab" data-bs-toggle="tab" data-bs-target="#nav-allocator"
+                                type="button" role="tab" aria-controls="nav-allocator" aria-selected="false">
+                                ALLOCATOR</button>
                             <button class="" id="nav-analysis-tab" data-bs-toggle="tab" data-bs-target="#nav-analysis"
                                 type="button" role="tab" aria-controls="nav-analysis" aria-selected="false">
                                 ANALYTICS DATA</button>
                         </div>
                     </nav>
-                    <div class="tab-content p-3 tab__body" id="nav-tabContent">
+                    <div class="tab-content p-3 tab__body style__scroll" id="nav-tabContent">
                         <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <div class="steps" id="app_sec">
@@ -683,7 +689,80 @@
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-customization" role="tabpanel"
                                                                                 aria-labelledby="nav-customization-tab">
-                                                                                customization
+                                                                                <div class="config__content config__custom"
+                                                                                    id="Customization_sec">
+                                                                                    <h4>CUSTOMIZATION</h4>
+                                                                                    <form action="">
+                                                                                        <div id="">
+                                                                                            <label
+                                                                                            for="">Upload 2D Assets (Assets must not have any space in its name) </label>
+                                                                                            <div class="modify__btns d-flex gap-2">
+                                                                                                <button id="UploadAssets2D"><i class="fa-solid fa-upload"></i> Upload 2D Assets</button>
+                                                                                                <button id="refreshAssets2DList"><i class="fa-solid fa-upload"></i> Refresh Assets 2D List </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                    <form action="" class="mt-3">
+                                                                                        <div>
+                                                                                            <label class="mb-3" for="">Customize Loading Screen <a href="https://eagle3dstreaming.com/customizing-your-background-logo-loading-and-play-buttons/">Details</a></label>
+                                                                                            <div class="d-flex align-items-center gap-3 mb-2">
+                                                                                                <img class="border" id="preview_TitleBarIcon" alt="Add Img" width="150" height="150">
+                                                                                                <div class="modify__btns d-flex gap-2">
+                                                                                                    <button id="Assign2TitleBarIcon"><i class="fa-solid fa-upload"></i> Upload 2D Assets</button>
+                                                                                                    <button id="b0"><i class="fa-solid fa-rotate-left"></i> Refresh Assets 2D List </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex align-items-center gap-3 mb-2">
+                                                                                                <img class="border" id="preview_BGI" alt="Add Img" width="150" height="150">
+                                                                                                <div class="modify__btns d-flex gap-2">
+                                                                                                    <button id="Assign2BGI"><i class="fa-solid fa-upload"></i> Assign To Loading Background</button>
+                                                                                                    <button id="b1"><i class="fa-solid fa-rotate-left"></i> Reset </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex align-items-center gap-3 mb-2">
+                                                                                                <img class="border" id="preview_Logo" alt="Add Img" width="150" height="150">
+                                                                                                <div class="modify__btns d-flex gap-2">
+                                                                                                    <button id="Assign2Logo"><i class="fa-solid fa-upload"></i> Assign To Logo</button>
+                                                                                                    <button id="b2"><i class="fa-solid fa-rotate-left"></i> Reset </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex align-items-center gap-3 mb-2">
+                                                                                                <img class="border" id="preview_LoadingImg" alt="Add Img" width="150" height="150">
+                                                                                                <div class="modify__btns d-flex gap-2">
+                                                                                                    <button id="Assign2LoadingImg"><i class="fa-solid fa-upload"></i> Assign To Loading Image </button>
+                                                                                                    <button id="b4"><i class="fa-solid fa-rotate-left"></i> Reset </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                
+                                                                                    <div class="custom__float d-flex gap-2 " id="my-icon-select-box-scroll">
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/000.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/10.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/000.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/10.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/000.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/10.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/000.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                        <div class="icon">
+                                                                                            <img src="https://test-upload-app.s3.amazonaws.com/demo/Assets2D/10.png" icon-value="1" icon-index="0" width="48" height="48" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-loadingscrn" role="tabpanel"
@@ -780,7 +859,7 @@
                                                                             <div class="tab-pane fade"
                                                                                 id="nav-experimental" role="tabpanel"
                                                                                 aria-labelledby="nav-experimental-tab">
-                                                                                    <div class="config__content config__expr"
+                                                                                <div class="config__content config__expr"
                                                                                     id="Experimental_sec">
                                                                                     <div class="configTerm d-flex gap-2 flex-column mb-3">
                                                                                         <label
@@ -1018,11 +1097,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- <form>
-                                                                <input type="text" placeholder="Enter Config Name"
-                                                                    id="addNewconfigNameInList">
-                                                                <button id="ok4addNewconfigNameInList">Add</button>
-                                                            </form> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1036,7 +1110,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="steps URL__steps" id="app_sec">
+                            <div class="steps URL__steps" id="appURLs_sec">
                                 <div class="step__title">
                                     <h2>STEP3: Generate URLs</h2>
                                 </div>
@@ -1126,7 +1200,7 @@
                             </div> -->
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <div class="steps" id="">
+                            <div class="steps" id="dedicatedServerApps_sec">
                                 <div class="step__title">
                                     <h2>STEP5: Details</h2>
                                 </div>
@@ -1182,10 +1256,106 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-analysis" role="tabpanel" aria-labelledby="nav-analysis-tab">
-                            <div class="analysis modify__btns">
+                        <div class="tab-pane fade" id="nav-automation" role="tabpanel" aria-labelledby="nav-automation-tab">
+                            <div class="steps" id="Automation_sec">
+                                <div class="step__title">
+                                    <h2>STEP6:</h2>
+                                </div>
+                                <div class="step__box d-flex flex-column">
+                                    <div class="d-flex" style="gap: 15px;">
+                                        <select name="" id="RunningAppsOnSelctedDSMachine-filter" class="ServerApps-filter">
+                                            <option value="select server" selected>Automation Select</option>
+                                            <option value="select server">Automation Select</option>
+                                        </select>
+                                        <div class="modify__btns d-flex justify-content-end">
+                                            <div>
+                                                <button title="Edit Config for Automation" id="EditConfig4Automation" data-toggle="modal" data-target="#model4AutomationConfig"><i class="fa-regular fa-pen-to-square"></i> Edit </button>
+                                                <!-- Modal -->
+                                                <div class="step1__add modal fade" id="model4AutomationConfig" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h4 class="text-center mb-3 font-weight-bold" style="color: #33AEF2;">Config Name</h4>
+                                                                <form>
+                                                                    <select name="" id="XXAppConfig-filter2" class="ServerApps-filter w-100 mb-2" style="max-width: unset;"></select>
+                                                                    <div class="d-flex gap-2">
+                                                                        <button id="ok4addNewAppANameInList" onclick="tabshow('appOptions_sec')">Streaming </button>
+                                                                        <button id="ok4addNewAppANameInList" onclick="tabshow('Automation_developerOptions_sec')">Developer Options</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button title="Start Automation Task On Machine" id="StartAutomationTaskOnMachine"><i class="fa-regular fa-circle-play"></i> Start Task</button>
+                                            <button title="Stop Server App" id="Stop Automation Task On Machine"><i class="fa-regular fa-circle-stop"></i> Stop Task</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-allocator" role="tabpanel" aria-labelledby="nav-allocator-tab">
+                            <div class="steps" id="Allocator_sec">
+                                <div class="step__title">
+                                    <h2>STEP7:</h2>
+                                </div>
+                                <div class="step__box allocator__step__box d-flex flex-column">
+                                    <div class="d-flex gap-2">
+                                        <select name="RegionFilter4Allocator2" id="RegionFilter4Allocator2" class="ServerApps-filter">
+                                            <option value="us-west1-b" selected>Oregon</option>
+                                        </select>
+                                        <input type="number" id="numBufferInstance2" min="0" placeholder="Buffer Amount">
+                                    </div>
+                                    <div class="modify__btns">
+                                        <button style="width: 250px;" id="ApplyBtn4AllocatorSchema2"> <i class="fa-regular fa-circle-check"></i> Apply Allocator Schema </button>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <div action="">
+                                            <label for="">Running Instances(All regions)</label>
+                                            <select name="" id="RunningMachines-filter">
+                                                <option value="prod3.eagle3dstreaming.com:8024">prod3.eagle3dstreaming.com:8024</option>
+                                                <option value="prod3.eagle3dstreaming.com:8024">prod3.eagle3dstreaming.com:8024</option>
+                                                <option value="prod3.eagle3dstreaming.com:8024">prod3.eagle3dstreaming.com:8024</option>
+                                                <option value="prod3.eagle3dstreaming.com:8024">prod3.eagle3dstreaming.com:8024</option>
+                                                <option value="prod3.eagle3dstreaming.com:8024">prod3.eagle3dstreaming.com:8024</option>
+                                            </select>
+                                        </div>
+                                        <div action="">
+                                            <label for="">Actions</label>
+                                            <select name="actions" id="Actions-filter">
+                                                <option value="Action_kickOutAllPlayers">kickOutAllPlayers</option>
+                                                <option value="Action_DeleteAllbuilds">DeleteAllbuilds</option>
+                                                <option value="Action_RestartMachine">RestartMachine</option>
+                                                <option value="Action_ShutDownMachine">ShutDownMachine</option>
+                                                <option value="Action_ExitEL">ExitEL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="modify__btns">
+                                        <button style="width: 300px;" id="performTaskOnSelectedRunningMachines"> <i class="fa-solid fa-gear"></i> Peform Task On selected Instance</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade d-flex flex-column gap-2" id="nav-analysis" role="tabpanel" aria-labelledby="nav-analysis-tab">
+                            <div class="analysis modify__btns" id="analytics_sec">
                                 <button id="openNewAnalytics"><i class="fa-solid fa-folder-open"></i> Open
                                     Analysis</button>
+                            </div>
+                            <div class="Admin_sec modify__btns d-flex flex-column gap-2" id="Admin_sec">
+                                <button style="width: 185px;" id="MonitoringBtn"><i class="fa-solid fa-user-secret"></i> Monitoring</button>
+                                <button style="width: 185px;" id="AdminBtn"><i class="fa-solid fa-user"></i> Admin Controls</button>
                             </div>
                         </div>
                     </div>
