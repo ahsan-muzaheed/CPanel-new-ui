@@ -26,10 +26,20 @@ a {
 
 .for__scroll{
     /* width: 100%; */
-    width: 1470px;
+    /* width: 1470px; */
 }
 
-style__scroll
+.scroll-section{
+    display: block !important;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scroll-section::-webkit-scrollbar {
+    display: none;
+}
 
 /* ===== custom scrollbar css start===== */
 .style__scroll::-webkit-scrollbar-track
@@ -63,8 +73,8 @@ style__scroll
 
 .cp__inner .nav {
     border-bottom: 0;
-    display: flex;
-    gap: 30px;
+    /* display: flex; */
+    /* gap: 30px; */
     background-color: #33AEF2;
     padding: 10px 50px;
 }
@@ -76,8 +86,13 @@ style__scroll
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    padding: 10px 22px;
+    padding: 10px 42px;
     border-radius: 50px;
+    margin-right: 15px;
+}
+
+.cp__inner .nav button:last-child{
+    margin-right: 0;
 }
 
 .cp__inner .nav button.active {

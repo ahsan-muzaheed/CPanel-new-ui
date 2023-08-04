@@ -6,3 +6,11 @@ formElements.forEach(button => {
     event.preventDefault();
   });
 });
+
+// tab BTB scroll in harizontally
+const scrollSection = document.querySelector('.scroll-section');
+
+  scrollSection.addEventListener('wheel', (event) => {
+      scrollSection.scrollLeft += event.deltaY;
+      event.preventDefault();
+  });
